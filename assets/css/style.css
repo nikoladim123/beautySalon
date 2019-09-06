@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../fonts/PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Black';
+  src: url('../fonts/PlayfairDisplay-Black.otf');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold.ttf');
+}
+
+
+body{
+  margin: 0;
+}
+
+
+.baner{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.headerBorders{
+  position: relative;
+  box-sizing: border-box;
+  border-top: 5.13vw solid rgba(200,132,98,0.72);
+  border-left: 5.7115vw solid rgba(200,132,98,0.72);
+  border-right: 5.7115vw solid rgba(200,132,98,0.72);
+  border-bottom: 10.454vw solid rgba(200,132,98,0.72);
+  height: 50.9vw;
+}
+.innerHeaderDiv{
+  position: relative;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border: 1px solid #efdbd1;
+  outline: 1px solid #f1e1d8;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.avatar{
+  flex-shrink: 0;
+  width: 16.6021vw;
+  margin-top: -5.1vw;
+  height: 15.5372vw;
+  z-index: 1;
+}
+
+.apranikBox{
+  background: rgba(149,94,61,0.51);
+  position: relative;
+  width: 64.891vw;
+  height: 10.989vw;
+  border: 1px solid white;
+  outline: 0.8vw solid rgba(149,94,61,0.51);
+  margin-top: 1.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apranikBox h1{
+  font-family: 'PlayfairDisplay-Black';
+  font-size: 5.3242vw;
+  color: white;
+  margin: 0;
+}
+
+.apranikBox h2{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'PlayfairDisplay-Black';
+  font-size: 2.90416vw;
+  top: 10vw;
+}
+
+
+.wineDivSquare{
+  transform: rotate(45deg);
+  position: absolute;
+  border-radius: 1px;
+  background-color: rgba(255,213,69,.36);
+  width: 5.75vw;
+  height: 5.75vw;
+  border: 0.7vw solid rgba(255,213,69,0.17);
+  top: -7vw;
+  outline: 0.1482vw solid rgba(255,213,69,0.55);
+  left: -1vw;
+  margin-top: 42.977vw;
+  margin-left: 47.9%;
+  background-clip: content-box;
+}
+.wineTriangle{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 2.136vw solid transparent;
+  border-top: 2.136vw solid #ffd545;
+  transform: rotate(-45deg);
+  top: 2.272vw;
+  left: 2.272vw;
+  animation-name: wineTriangle;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+  /* top: 0.5vw; */
+  /* left: 0.5vw; */
+}
+@keyframes wineTriangle {
+  0%{
+    opacity: 1;
+    top: 3.272vw;
+    left: 3.272vw;
+  }
+  100%{
+    opacity: 0;
+    top: 1.5vw;
+    left: 1.5vw;
+  }
+}
+
+
+/* main */
+.netflixBox{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.netflix{
+  width: 75.363vw;
+  position: relative;
+  top: -5.55vw;
+}
+
+.productContainer{
+  position: relative;
+  display: flex;
+}
+
+
+
+/* car start*/
+.rightPriceContainer div{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.carmaincontainer{
+  /* border: 1px solid black; */
+  position: relative;
+  width: 30vw;
+  height: 33vw;
+  display: flex;
+  margin-left: 33vw;
+  flex-direction: column;
+  margin-bottom: 8vw;
+}
+.car-container{
+  background-size: 100% 100%;
+  transition: 1s;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 85%;
+}
+.smallImg-container{
+  margin-top: 3vw;
+  display: flex;
+  height: 15%;
+  width: 100%;
+  justify-content:space-around;
+}
+.smallImg{
+  background-size: 100% 100%;
+  border: 1px solid white;
+  transition: 0.3s;
+  opacity: 0.65;
+  width: 10%;
+}
+.smallImg:hover{
+  border: 1px solid rgb(200,200,200);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.car-box{
+  transition: 1s;
+  border-color: red;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.img{
+  transition: 0.1s;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-color: yellow;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.img:hover{
+  background-size: 150% 150%;
+}
+.imgOne{background-image: url('img/one.jpg');}
+.imgTwo{background-image: url('img/two.jpg');}
+.imgThree{background-image: url('img/three.jpg');}
+.imgFour{background-image: url('img/four.jpg');}
+.imgFive{background-image: url('img/five.jpg');}
+.imgSix{background-image: url('img/one.jpg');}
+
+/* car end */
+
+.rightPriceContainer{
+  margin-left: 5vw;
+}
+
+.rightPriceContainer h3{
+  font-family: 'PlayfairDisplay-Regular';
+  margin: 0;
+  font-size: 2.3233vw;
+  color:;
+  margin-top: 1vw;
+}
+
+.rightPriceContainer p{
+  font-size: 1.45208vw;
+  margin: 0;
+  color: #f55c11;
+  margin-top: 0.5vw;
+}
+
+.rightPriceContainer button{
+  width: 23.7173vw;
+  height: 4.06582vw;
+  border: none;
+  background: #f75e13;
+  color: white;
+  border-radius: 0.3vw;
+  font-family: 'Lato-Bold';
+  margin-top: 22.4vw;
+  font-size: 1.452vw;
+}
